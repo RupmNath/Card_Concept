@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.card {
+    height: 350px;
+    width: 300px;
+    border: 3px solid black;
+    background-color: whitesmoke;
+}
+
+img {
+    height: 200px;
+    width: 290px;
+    margin: 5px;
+}
+
+p {
+    margin: 5px;
+    text-align: center;
+}
+
+/* Basic button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-left: 110px;
+    padding: 10px;
+}
+
+/* Hover effect */
+.btn:hover {
+    background-color: red;
+    color: white;
+}
+
+
+@media(max-width: 1200px) {
+    .card-container {
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 100%;
+        gap: 20px;
+    }
+}
